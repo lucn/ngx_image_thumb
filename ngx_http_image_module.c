@@ -793,7 +793,7 @@ static int parse_image_info(void *conf)
                         	return -1;
                         }
 			//printf("source_file:%s\n",info->source_file);
-			if(file_exists(info->source_file) == -1)//原图不存在
+			if(file_exists(info->source_file) == -1 && 0)//原图不存在
 			{
 				download(conf);
 			}
